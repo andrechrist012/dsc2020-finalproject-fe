@@ -1,0 +1,514 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    color: #707070;
+    padding: 0;
+    margin: 0;
+}
+
+#loader{
+    margin-top: 2em;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #707070;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    background-color: #C2C2C2;
+}
+
+.title{
+    display: none;
+    background-color: white;
+    text-align: center;
+    padding: .5em;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: .8em;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.menuPage a{
+    text-decoration: none;
+    padding-left: 2em;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+#logo{
+    font-size: 20px;
+    padding-right: .5em;
+    padding-left: 2.5em;
+}
+
+#active{
+    font-weight: lighter;
+}
+
+.phoneCall{
+    font-size: 18px;
+    padding-right: 2.5em;
+}
+
+.berandaPage{
+    position: relative;
+    padding-top: 2em;
+}
+
+.titlePage{
+    padding: 2em;
+    font-size: 30px;
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+.mark{
+    font-weight: 550;
+}
+
+.case{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.totalCase{
+    text-align: center;
+    background-color: white;
+    padding: .8em;
+    font-size: 28px;
+    border-radius: 15px;
+}
+
+.totalCase p{
+    padding-top: .2em;
+}
+
+.statusCase{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.caseDetail{
+    background-color: white;
+    padding: 1.5em;
+    margin: 1em;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.caseDetail p{
+    padding-top: .5em;
+}
+
+.dataprovinsiPage{
+    position: relative;
+    padding-top: 4em;
+    height: fit-content;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.searchBar{
+    padding: 2em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.icon{
+    display: flex;
+    margin-right: -.8em;
+    border: none;
+    background-color: #DEDCDC;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+.inputIcon{
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    padding-left: 1.5em;
+}
+
+img{
+    height: auto;
+    width: 50%;
+}
+
+.formInput{
+    background-color: #DEDCDC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    padding: .5em;
+    font-size: 15px;
+    width: 50%;
+}
+
+button:focus{
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+}
+
+.dataDetail{
+    position: relative;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 2em;
+}
+
+.numTitle{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.provinsiTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 1.3em;
+    max-width: 350px;
+    padding: 0 0 .8em 0;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.provinsiDetail{
+    font-size: 21px;
+}
+
+.line{
+    width: 96%;
+    margin: 1em .5em;
+    padding: 0.1px;
+    background-color: #707070;
+}
+
+.num{
+    position: absolute;
+    right: 5em;
+}
+
+.text{
+    padding-right: 12em;
+    padding-left: 4.5em;
+}
+
+.forPhone{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+    .berandaPage{
+        padding-top: 4em;
+    }
+
+    .dataprovinsiPage{
+        position: relative;
+        padding-top: 4em;
+        height: fit-content;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .numTitle{
+        font-size: 18px;
+    }
+
+    .provinsiTitle{
+        font-size: 25px;
+        max-width: 280px;
+    }
+    
+    .provinsiDetail{
+        font-size: 16px;
+    }
+
+    .num{
+        position: absolute;
+        right: 5em;
+    }
+    
+    .text{
+        padding-right: 12em;
+        padding-left: 4.5em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .menuPage a{
+        text-decoration: none;
+        padding-left: 2em;
+        font-weight: 550;
+        font-size: 13px;
+    }
+
+    .phoneCall{
+        font-size: 15px;
+        padding-right: 2.5em;
+    }
+
+    .titlePage{
+        padding: 2em;
+        font-size: 28px;
+        padding-bottom: 1.5em;
+        text-align: center;
+    }
+
+    .dataprovinsiPage{
+        position: relative;
+        padding-top: 4em;
+        height: fit-content;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .numTitle{
+        font-size: 16px;
+    }
+
+    .provinsiTitle{
+        font-size: 18px;
+        max-width: 200px;
+        margin: 0 2em;
+    }
+    
+    .provinsiDetail{
+        font-size: 14px;
+    }
+
+    .num{
+        position: absolute;
+        right: 5em;
+    }
+    
+    .text{
+        padding-right: 10em;
+        padding-left: 4.5em;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .title{
+        display: block;
+    }
+
+    nav{
+        top: 0;
+        position: sticky;
+        justify-content: space-evenly;
+        width: auto;
+    }
+
+    .menuPage a{
+        font-size: 16px;
+        padding-right: 2em;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    .phoneCall{
+        display: none;
+    }
+
+    .forPhone{
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        padding: 1em;
+        background-color: white;
+    }
+
+    .berandaPage{
+        padding-top: 1em;
+    }
+
+    .titlePage{
+        font-size: 20px;
+        padding-bottom: 2.5em;
+    }
+
+    .totalCase{
+        font-size: 22px;
+        padding: 1em 2em;
+        margin-bottom: .5em;
+    }
+
+    .caseDetail{
+        font-size: 17px;
+    }
+
+    .statusCase{
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .dataprovinsiPage{
+        padding-top: 1em;
+    }
+
+    .formInput{
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .data{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .numTitle{
+        position: absolute;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .provinsiTitle{
+        font-size: 21px;
+        margin: 0 3em;
+        padding: 0 0 1em 0;
+    }
+
+    .provinsiDetail{
+        font-size: 16px;
+    }
+
+    .num{
+        right: 4.5em;
+    }
+
+    .text{
+        padding-right: 12em;
+        padding-left: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .menuPage a{
+        font-size: 14px;
+        padding-right: 2em;
+    }
+
+    .formInput{
+        font-size: 12px;
+    }
+
+    .provinsiTitle{
+        font-size: 18px;
+        margin: 0 2em;
+    }
+
+    .provinsiDetail{
+        font-size: 15px;
+    }
+
+    .num{
+        right: 4em;
+    }
+
+    .text{
+        padding-right: 10em;
+        padding-left: 3em;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .menuPage a{
+        font-size: 12px;
+        padding-right: 2em;
+    }
+
+    .titlePage{
+        font-size: 20px;
+        padding-bottom: 2.5em;
+    }
+
+    .numTitle{
+        font-size: 13px;
+    }
+
+    .provinsiTitle{
+        font-size: 15px;
+    }
+
+    .provinsiDetail{
+        font-size: 12px;
+    }
+
+    .num{
+        right: 4em;
+    }
+
+    .text{
+        padding-left: 3em;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .menuPage a{
+        font-size: 12px;
+        padding-right: 2em;
+    }
+
+    .titlePage{
+        font-size: 15px;
+        padding-bottom: 2.5em;
+    }
+
+    .caseDetail{
+        font-size: 14px;
+    }
+
+    .num{
+        right: 3.5em;
+    }
+
+    .text{
+        padding-right: 7.5em;
+        padding-left: 2.5em;
+    }
+}
